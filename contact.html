@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dnyan Sanskar Pre School</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> -->
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav> 
+                <a href="index.html"><img src="images/logo3.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="events.html">EVENTS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="gallary.html">GALLARY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-- Contact page -->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3778.7747900855366!2d73.81717337519657!3d18.718898282413466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDQzJzA4LjAiTiA3M8KwNDknMTEuMSJF!5e0!3m2!1sen!2sin!4v1704441351398!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Dnyan Sanskar Pre School</h5>
+                            <p>Sr.No.440/1,Plot no.2811,Shiv Malhar Colony, Moi-Nighoje road, Tal.Khed, Dist.Pune-410501</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>(+91) 9022183579 /8888581015</h5>
+                            <p> Monday to Friday, 11:00 AM - 02:00 PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>Dnyan Sanskar Pre School</h5>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" required></textarea><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <section class="footer">
+            <h4>About Dnyan Sanskar Pre School</h4>
+            <P>Our Mission to provide a nurturing environment that encourages social, emotional, and cognitive development in young children, 
+            fostering a love for learning and laying the  <br> groundwork for future academic success through play-based education and foundational skill-building.
+           </P>
+                <div class="icons">
+                    <a href=><i class="fa fa-linkedin"></i></a href=><i class="fa fa-youtube"></i></a>
+                </div>
+
+
+        </section>
+        <!--JavaScript for Toggle Menu  -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>
